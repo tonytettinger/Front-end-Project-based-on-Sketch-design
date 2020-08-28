@@ -1,5 +1,9 @@
-Az elkeszult build megtekinheto:
+**Az elkeszult build megtekinheto:**
 
+https://tonytettinger.github.io/Front-End-2020/
+
+  Helyi futtatas:
+  
 - npm install
 - npm run start
 
