@@ -10,6 +10,10 @@ header {
   .menushow .nav-menu {
     display: block;
   }
+
+  .menushow .nav-menu {
+    display: block;
+  }
   .icon-hamburger {
     display: block;
     position: absolute;
@@ -80,14 +84,17 @@ header {
     max-width: 20rem;
     font-size: 2.8rem;
   }
-  button {
+  .cta-button {
     background-color: $black;
-    padding: 1.2rem 3.4rem;
     margin-bottom: 2.8rem;
   }
-  button a {
+
+  .cta-button button {
     font-weight: $semibold;
     color: $white;
+    padding: 1.6rem 7rem;
+    background-color: $black;
+    border: none;
   }
 }
 
