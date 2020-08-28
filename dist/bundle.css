@@ -5269,6 +5269,7 @@ header {
     letter-spacing: 0;
     line-height: 28px;
     margin-bottom: 4rem;
+    display: block;
   }
 
   #hero {
@@ -5377,21 +5378,25 @@ header {
 #articles article {
   line-height: 28px;
 }
-#articles figcaption,
-#articles .read-more {
+
+figcaption,
+.read-more {
   margin-left: 2rem;
   margin-right: 2rem;
   font-size: 1.4rem;
 }
-#articles figure {
+
+figure {
   margin: 0;
 }
-#articles .read-more {
+
+.read-more {
   position: relative;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-#articles .icon-arrow {
+
+.icon-arrow {
   position: absolute;
   top: 3.7rem;
   left: 10rem;
@@ -5418,7 +5423,7 @@ header {
     font-size: 1.8rem;
   }
 
-  .readmore a {
+  .read-more a {
     font-size: 1.6rem;
   }
 }
