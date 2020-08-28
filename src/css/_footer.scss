@@ -1,0 +1,71 @@
+.footer-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  @include fontsize($smallfont);
+  @include fontweight($bold);
+}
+
+.footer-title a {
+  @include fontsize($smallfont);
+  @include fontcolor($footertext);
+}
+
+footer {
+  text-align: center;
+  line-height: 30px;
+  padding-bottom: 5rem;
+  border-top: 1px solid rgb(41, 41, 41, 0.1);
+  border-bottom: 1px solid rgb(41, 41, 41, 0.1);
+  form {
+    label {
+      display: none;
+    }
+    input {
+      border: 1px solid #dbdbdb;
+      height: 4.2rem;
+      color: $innerlabel;
+      padding: 1.6rem 0 1.6rem 1.2rem;
+      width: 100%;
+    }
+  }
+}
+.form-name,
+.form-email {
+  margin-bottom: 1.8rem;
+}
+
+@include lgmax {
+  .form-name input:nth-child(2) {
+    width: 100%;
+    margin-bottom: 1.8rem;
+  }
+}
+
+.form-email input,
+.form-submit input {
+  width: 100%;
+}
+
+.form-submit input {
+  background-color: $black;
+  color: $white;
+  font-weight: $semibold;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+
+.return {
+  height: 5.3rem;
+}
+
+@include lg {
+  footer {
+    text-align: left;
+  }
+  .form-name input {
+    width: 19rem;
+  }
+  .footer-title {
+    margin-top: 4rem;
+  }
+}

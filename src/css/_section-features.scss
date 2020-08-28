@@ -1,0 +1,33 @@
+#features {
+  background-color: $featuresbackground;
+  color: $white;
+  margin-bottom: 5rem;
+  @include lgmax {
+    .column:nth-child(2n + 1) {
+      border-right: 1px solid rgba(196, 163, 123, 0.2);
+    }
+    .column:nth-child(-n + 2) {
+      border-bottom: 1px solid rgba(196, 163, 123, 0.2);
+    }
+  }
+  .column {
+    @include fontsize($mediumfont);
+    @include fontweight($bold);
+  }
+}
+.icon-middle {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.icon-subtitle {
+  margin-bottom: 3.7rem;
+  padding: 0 10rem;
+  white-space: nowrap;
+}
+
+@include lg {
+  .border-right {
+    border-right: 1px solid rgba(196, 163, 123, 0.2);
+  }
+}

@@ -1,0 +1,50 @@
+#articles {
+  margin-bottom: 5rem;
+  article {
+    line-height: 28px;
+  }
+  figcaption,
+  .read-more {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    @include fontsize($smallfont);
+  }
+  figure {
+    margin: 0;
+  }
+  .read-more {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .icon-arrow {
+    position: absolute;
+    top: 3.7rem;
+    left: 10rem;
+  }
+}
+.article-image {
+  width: 100%;
+  object-fit: cover;
+  height: 25rem;
+}
+
+.article-border {
+  border: 1px solid rgb(41, 41, 41, 0.1);
+}
+
+.article-figcaption {
+  @include fontweight($bold);
+  @include fontcolor($alttext);
+  @include fontsize($smallfont);
+}
+
+@include lg {
+  .article-figcaption {
+    @include fontsize($mediumfont);
+  }
+
+  .readmore a {
+    @include fontsize($regularfont);
+  }
+}

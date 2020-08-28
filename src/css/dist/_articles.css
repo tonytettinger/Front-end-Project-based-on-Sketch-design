@@ -1,0 +1,27 @@
+#articles article {
+  line-height: 28px;
+}
+#articles figcaption,
+#articles .read-more {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+#articles figure {
+  margin: 0;
+}
+#articles .read-more {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+#articles .icon-arrow {
+  position: absolute;
+  top: 3.7rem;
+  left: 10rem;
+}
+
+.article-image {
+  width: 100%;
+  object-fit: cover;
+  height: 25rem;
+}

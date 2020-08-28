@@ -1,0 +1,23 @@
+.footer-title {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  line-height: 30px;
+}
+footer form label {
+  display: none;
+}
+footer form input {
+  border: 1px solid #dbdbdb;
+  height: 4.2rem;
+}
+
+.form-name input {
+  width: 19rem;
+}
+
+.form-email input {
+  width: 100%;
+}

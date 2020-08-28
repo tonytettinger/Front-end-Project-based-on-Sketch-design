@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/bundle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <title>Front Watch</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="outer-wrapper-hero">
+        <div class="inner-wrapper">
+          <header>
+            <nav class="navbar d-flex align-items-center navbar-expand-lg" v-bind:class="{ menushow: isShown }">
+              <div class="navbar--left">
+                <div class="icon-front_logo"></div>
+              </div>
+              <div class="navbar--right" >
+                <nav class="d-flex justify-content-between" v-bind:class="{ menushow: isShown }">
+                  <a class="nav-menu" href="#">Shop</a>
+                  <a class="nav-menu" href="#">Collection</a>
+                  <a class="nav-menu" href="#">Accessories</a>
+                  <a class="nav-menu" href="#">Gift guide</a>
+                  <a class="nav-menu" href="#">Blog</a>
+                  <a class="nav-menu" href="#">Contact</a>
+                </nav>
+                <a href="#" class="icon-hamburger" @click="showMenu"></a>
+              </div>
+            </nav>
+            <div id="hero" class="d-flex">
+              <div class="cta cta--left">
+                <h1>
+                  The message is a simple.
+                  <span class="font-color-light">That’s It.</span>
+                </h1>
+                <div class="hero-sub">This is watch maintains their signature aesthetic as it pushes the <b>boundaries of design possibility</b>. Despite its almost effortless appearance, Seconds is the result of a careful and <b>imaginative creative process.</b></div>
+                <button><a href="#">Buy now</a></button>
+              </div>
+              <div class="cta cta--right">
+                <div class="hero-watch"><img src="/Assets/images/hero_watch.png" alt="Wrist watch" /></div>
+                <div class="overlay-text">Christ Ward</div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="inner-wrapper container-fluid">
+          <div class="row">
+          <div class="column col-6 col-lg-3 feature d-flex justify-content-center">
+            <div class="icon-container w-100 text-center">
+              <div class="border-right">
+                <div class="icon-middle mx-auto icon-leather_icon"></div>
+                <div class="icon-subtitle">Leather strap</div>
+              </div>
+            </div>
+          </div>
+          <div class="column col-6 col-lg-3 feature d-flex justify-content-center">
+            <div class="icon-container w-100 text-center">
+              <div class="border-right">
+                <div class="icon-middle mx-auto icon-water_resistant"></div>
+                <div class="icon-subtitle">Water resistant</div>
+              </div>
+            </div>
+          </div>
+          <div class="column col-6 col-lg-3 feature d-flex justify-content-center">
+            <div class="icon-container w-100 text-center">
+              <div class="border-right">
+                <div class="icon-middle mx-auto icon-leather_icon icon-spring_drive_icon"></div>
+                <div class="icon-subtitle">Spring drive</div>
+              </div>
+            </div>
+          </div>
+          <div class="column col-6 col-lg-3 feature d-flex justify-content-center">
+            <div class="icon-container w-100 text-center">
+              <div>
+                <div class="icon-middle mx-auto icon-warranty_icon"></div>
+                <div class="icon-subtitle">Warranty</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="articles">
+        <div class="inner-wrapper container-fluid">
+          <div class="row">
+            <article class="col col-12 col-md-6 col-lg-4" v-for="article, index in data">
+              <div class="article-border">
+              <figure>
+                <img class="article-image" :src="article.image" alt="article image" />
+                <figcaption class="article-figcaption">{{article.title}}</figcaption>
+              </figure>
+              <div class="read-more">
+                <a href="#" class="font-color-light">Read more</a>
+                <i class="icon-arrow font-color-light"></i>
+              </div>
+            </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="inner-wrapper container-fluid">
+          <div class="row">
+            <nav class="column col-lg-2">
+              <div class="footer-title">About</div>
+              <ul>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Loremipsum</a></li>
+                <li><a href="#">Brands sold</a></li>
+                <li><a href="#">Conditions of use</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <nav class="column col-lg-2">
+              <div class="footer-title">Information</div>
+              <ul>
+                <li><a href="#">Help to purchasing</a></li>
+                <li><a href="#">Purchasing information</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Data protection</a></li>
+                <li><a href="#">Conditions</a></li>
+              </ul>
+            </nav>
+            <nav class="column col-lg-2">
+              <div class="footer-title">Follow me!</div>
+              <ul>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Google Plus</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </nav>
+            <div class="column col-lg-4 offset-lg-2">
+              <div class="footer-title">Subscribe to the newsletter</div>
+              <form id="app" @submit="checkForm" action="https://oander.hu/" method="post">
+              <p v-if="errors.length">
+                <b>Please correct the following error(s):</b>
+                <ul>
+                  <li v-for="error in errors">{{ error }}</li>
+                </ul>
+              </p>
+              <div class="form-name d-flex flex-wrap flex-lg-nowrap justify-content-between">
+                <label for="first">First Name</label>
+                <input id="first" v-model="first" type="text" name="first" placeholder="First Name">
+                <label for="last">Last Name</label>
+                <input id="last" v-model="last" type="text" name="last" placeholder="Last Name">
+              </div>
+              <div class="form-email">
+                <label for="email">Email</label>
+                <input id="email" v-model="email" type="text" name="email" placeholder="Email">
+              </div>
+
+              <div class="form-submit">
+                <input type="submit" value="Subscribe">
+              </div>
+
+            </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <nav class="return d-flex justify-content-center align-items-center"><a href="#app"><div class="icon-arrowup"></div></a></nav>
+    </div>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>

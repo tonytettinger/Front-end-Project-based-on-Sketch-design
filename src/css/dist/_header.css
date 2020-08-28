@@ -1,0 +1,39 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+}
+.navbar--left {
+  width: 48%;
+}
+.navbar--right {
+  width: 52%;
+}
+.navbar--right nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-front_logo {
+  height: 3.6rem;
+}
+
+.outer-wrapper-hero {
+  background: url("/Assets/images/background_pattern.png") #242123;
+  background-size: 56% 44%;
+  height: 70rem;
+}
+
+#hero h1 {
+  margin-left: 3rem;
+  margin-top: 13rem;
+  margin-bottom: 3rem;
+}
+
+.hero-sub {
+  max-width: 44rem;
+  margin-left: 3rem;
+}

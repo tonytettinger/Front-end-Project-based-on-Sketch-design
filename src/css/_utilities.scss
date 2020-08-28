@@ -1,0 +1,76 @@
+.font-color-light {
+  color: $lighttext;
+}
+
+.font-color-alt {
+  color: $alttext;
+}
+
+.font-color-footer {
+  color: $footertext;
+}
+
+.font-size-small {
+  font-size: $smallfont;
+}
+
+.font-size-medium {
+  font-size: $mediumfont;
+}
+
+.font-weight-bold {
+  font-weight: $bold;
+}
+
+.icon-middle {
+  width: 5rem;
+  height: 6rem;
+}
+
+.icon-arrow {
+  width: 1.3rem;
+  height: 1.2rem;
+}
+
+.icon-arrowup {
+  width: 2.5rem;
+  height: 1.4rem;
+}
+
+.icon-hamburger {
+  width: 2.7rem;
+  height: 1.8rem;
+  color: #3a3a3a;
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lgx {
+  @media (min-width: #{$screen-lgx-min}) {
+    @content;
+  }
+}
+
+@mixin fontsize($fontsize) {
+  font-size: $fontsize;
+}
+
+@mixin fontweight($fontweight) {
+  font-weight: $fontweight;
+}
+
+@mixin fontcolor($property) {
+  color: $property;
+}

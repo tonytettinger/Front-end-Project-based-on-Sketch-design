@@ -1,0 +1,37 @@
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lgmax {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin lgx {
+  @media (min-width: #{$screen-lgx-min}) {
+    @content;
+  }
+}
+
+@mixin fontsize($fontsize) {
+  font-size: $fontsize;
+}
+
+@mixin fontweight($fontweight) {
+  font-weight: $fontweight;
+}
+
+@mixin fontcolor($property) {
+  color: $property;
+}
