@@ -5191,6 +5191,7 @@ header {
   margin-bottom: 2.8rem;
 }
 #hero .cta-button button {
+  cursor: pointer;
   font-weight: 500;
   color: #fff;
   padding: 1.6rem 7rem;
@@ -5288,9 +5289,6 @@ header {
     margin-bottom: 3rem;
     max-width: 46rem;
     font-size: 5rem;
-  }
-  #hero button {
-    padding: 1.2rem 6.9rem;
   }
 
   .hero-watch {
