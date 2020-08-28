@@ -16,26 +16,25 @@ header {
     right: 0;
     top: -10px;
   }
-  .navbar--right nav .menushow {
-    flex-wrap: wrap;
-    width: 100px;
-    top: -50px;
-    right: 120px;
-  }
-  .navbar--left nav .menushow {
-    display: none;
-  }
+
   .navbar.menushow {
     height: 30rem;
+    .navbar--left nav {
+      display: none;
+    }
+    .navbar--right nav {
+      flex-wrap: wrap;
+      width: 80px;
+      width: 100px;
+      top: -50px;
+      right: 120px;
+    }
   }
-
-  .navbar .menushow {
-    flex-wrap: wrap;
-    width: 80px;
-  }
-
   .navbar a {
     @include fontsize($mediumfont);
+  }
+  .overlay-text {
+    display: none;
   }
 }
 .navbar {

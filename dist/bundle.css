@@ -5117,28 +5117,26 @@ header {
     top: -10px;
   }
 
-  .navbar--right nav .menushow {
+  .navbar.menushow {
+    height: 30rem;
+  }
+  .navbar.menushow .navbar--left nav {
+    display: none;
+  }
+  .navbar.menushow .navbar--right nav {
     flex-wrap: wrap;
+    width: 80px;
     width: 100px;
     top: -50px;
     right: 120px;
   }
 
-  .navbar--left nav .menushow {
-    display: none;
-  }
-
-  .navbar.menushow {
-    height: 30rem;
-  }
-
-  .navbar .menushow {
-    flex-wrap: wrap;
-    width: 80px;
-  }
-
   .navbar a {
     font-size: 1.8rem;
+  }
+
+  .overlay-text {
+    display: none;
   }
 }
 .navbar {
