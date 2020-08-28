@@ -1,4 +1,7 @@
-Az elkeszult build megtekinheto.
+Az elkeszult build megtekinheto:
+
+- npm install
+- npm run start
 
 Struktúra információ:
 
