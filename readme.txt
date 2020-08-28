@@ -1,3 +1,5 @@
+Az elkeszult build megtekinheto.
+
 Struktúra információ:
 
 - .sketch formátumban, illetve exportált verzióban is elérhető a design (ha nincs sketch)
