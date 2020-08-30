@@ -11,9 +11,6 @@ header {
     display: block;
   }
 
-  .menushow .nav-menu {
-    display: block;
-  }
   .icon-hamburger {
     display: block;
     position: absolute;
@@ -28,7 +25,6 @@ header {
     }
     .navbar--right nav {
       flex-wrap: wrap;
-      width: 80px;
       width: 100px;
       top: -50px;
       right: 120px;
@@ -46,7 +42,6 @@ header {
   height: 8rem;
   background-color: #fff;
   padding: 0 2rem;
-  position: sticky;
   box-sizing: border-box;
   top: 0;
   z-index: 999;
