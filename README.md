@@ -1,5 +1,7 @@
 **Responsive Front-End Development project based on the given Sketch design**
 
+This project was made 100% from scratch utilising only the given Sketch design.
+
 Live version:
 https://tonytettinger.github.io/Front-end-Project-based-on-Sketch-design/
 
